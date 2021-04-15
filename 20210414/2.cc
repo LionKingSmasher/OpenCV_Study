@@ -15,9 +15,9 @@ int main(int argc, char **argv){
     Mat gray_scale_img;
     while(1){
         cap >> img;
-        cvtColor(img, gray_scale_img, COLOR_BGR2XYZ);
+        cvtColor(img, gray_scale_img, COLOR_BGR2GRAY);
         imshow("camera", gray_scale_img);
-        if(waitKey(60) == 27) break;
+        if(waitKey(25) == 27) break;
     }
     return 0;
 }
